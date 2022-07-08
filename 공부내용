@@ -1,0 +1,88 @@
+자바스크립트 공부내용 정리
+
+const a=5;//const 는 바뀌지 않은 variable
+const b=2;
+let myName =("seop");         //let은 코드 중간에 업데이트 될수 있는 variable
+
+console.log(a+b);
+console.log(a*b);
+console.log(a/b);
+console.log ("hello "+myName);
+
+myName = "chanseop";
+console.log("hello my name is"+myName);
+
+
+
+
+const amIFat = null;      //정의는 하고 그안에 값이 null
+let something;            // 정의 조차 되지 않은 상태 undefined
+console.log(something); 값이 존재하지 않는다
+
+
+
+
+const Week =["mon","thu","wed","thu","fri","sat"];
+//Get Item form Array
+console.log(Week); 
+//Add one more day to the array
+Week.push("sun");
+console.log(Week);
+
+
+const player={ //object 
+    name: "seop",
+    points: 10,
+    fat: true,
+ };
+ console.log(player);
+ player.lastName ="potato"; //property 추가
+ player.points =15; //수정
+ console.log(player);
+
+
+
+
+/*function sayHello(nameOfPerson,age){
+   console.log("Hello my name is "+nameOfPerson+" and I'm "+age);
+}
+
+//함수 호출(명령어) 꼴로 이루어져 있다.
+//()가 실행버튼이다.
+sayHello("seop", 10);
+sayHello("chan", 23);
+sayHello("lion", 21);
+*/
+
+const player ={ //object 안에 function 만들어서 호출하기
+   name:"seop",
+   sayHello: function(otherPersonName){
+      console.log("hello "+otherPersonName + " nice to meet you")
+   },
+};
+
+player.sayHello("chan");
+\
+
+
+~~~실습~~~
+const calculate ={
+   add: function(a,b){
+      console.log(a+b);
+   },
+   minus: function(a,b){
+      console.log(a-b);
+   },
+   divide: function(a,b){
+      console.log(a/b);
+   },
+   squared:function(a,b){
+      console.log(a**b);
+   }
+
+};
+
+calculate.add(1,2);
+calculate.minus(2,1);
+calculate.divide(6,2);
+calculate.squared(4,2);
