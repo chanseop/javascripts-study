@@ -15,6 +15,7 @@ console.log(user);
 ```
 
 ### await
+ -  await은 아래 코드에서 delay함수가 끝나고 나면 그 뒤에 있는 명령이 처리되게 동기적으로 처리가 필요한 부분을 해결해줄수 있다.
 ```js
 function delay(ms){
     return new Promise(resolve=>setTimeout(resolve,ms));
