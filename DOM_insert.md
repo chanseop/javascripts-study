@@ -62,3 +62,36 @@ const firstLiElem=document.getElementById("first-li-id");
 
 olElem.insertBefore(liElem,firstLiElem);
 ```
+
+
+## append,prepend,after,before
+ - prepend: 요소 내부의 가장 앞으로 이동
+ - append: 요소 내부의 마지막으로 이동, appendchild와 다르게 여러노드를 추가할수 있다.
+ - before: 요소 앞으로 이동
+ - after: 요소 뒤로 이동
+
+## removeChild,remove
+ - removeChild: DOM 트리 내에 노드를 제거할 때 사용합니다. 제거하고자 하는 노드가 존재할 경우 부모 노드에서 removeChild 메서드를 호출해 제거합니다.
+ - remove: removeChild와 비슷하게 DOM 트리 내에서 노드를 제거하고 싶을경우 node.remove() 형태로 제거합니다.
+
+```js
+// removeChild
+divElm.removeChild(divElm)
+// remove
+divElm.remove
+```
+
+## insertAdjacentHTML
+ - XML 또는 HTML로 해석될 수 있는 문자열을 파싱한 뒤 적정한 노드를 생성해 특정 위치에 삽입
+ - 방법:
+   - beforebegin, afterbegin, beforeend, afternd
+```JS
+elem.insertAdjacentHTML('beforebegin', '<span>hello, world</span>')
+```
+
+
+
+
+
+
+
